@@ -1,5 +1,17 @@
+import classNames from 'classnames/bind';
+import style from './Header.module.scss';
+
+const cx = classNames.bind(style);
+
 function Header() {
-    return <h2>Header</h2>;
+    return (
+        <header className={cx('wapper')}>
+            <div className={cx('inner')}>
+                {/*Logo */}
+                {/*Seach */}
+            </div>
+        </header>
+    );
 }
 
 export default Header;
